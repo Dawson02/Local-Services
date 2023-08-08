@@ -1,11 +1,12 @@
+import Header from "../components/Header"
 
-
-function Search() {
+function Service() {
     return(
         <div>
-            <h1>Search</h1>
+            <Header />
+            <h1>Service</h1>
         </div>
     )
 }
 
-export default Search;
+export default Service;
