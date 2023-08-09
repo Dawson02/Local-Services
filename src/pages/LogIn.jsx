@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -7,6 +8,9 @@ const Login = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+
+  // Use the useNavigate hook
+  const navigate = useNavigate();
 
   const handleAuthentication = () => {
     if (isSignUp) {
@@ -20,6 +24,9 @@ const Login = () => {
         (username === "Noman" && password === "Keyin")
       ) {
         setIsLoggedIn(true);
+
+        // Navigate to Home route after successful login
+        navigate("/Home");
       } else {
         setErrorMessage("Invalid credentials. Please try again.");
       }
@@ -77,3 +84,4 @@ const Login = () => {
 };
 
 export default Login;
+
