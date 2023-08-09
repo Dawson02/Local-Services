@@ -1,0 +1,87 @@
+.account-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-form label {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.account-form input,
+.account-form textarea,
+.account-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.account-form select {
+  appearance: none;
+  background-color: #fff;
+  width: 100%;
+}
+
+.account-update-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.account-update-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.confirmation {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.confirm-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.confirm-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
