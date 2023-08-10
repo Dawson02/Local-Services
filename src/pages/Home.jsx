@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import React from "react";
+import Footer from "../components/Footer"
 
 function Home() {
     return(
@@ -62,11 +63,9 @@ function Home() {
           </section>
         </div>
   
-        <footer className="footer">
-          <p>
-            &copy; {new Date().getFullYear()} Service Fusion. All rights reserved.{" "}
-          </p>
-        </footer>
+        <div class="footer">
+          <Footer />
+        </div>
       </div>
     );
 }
