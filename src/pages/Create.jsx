@@ -40,8 +40,14 @@ function Create() {
         
             if (response.ok) {
                 setSubmitMessage('Service created successfully!');
+                setTimeout(() => {
+                    setSubmitMessage('');
+                }, 2000);
             } else {
                 setSubmitMessage('Failed to create service.');
+                setTimeout(() => {
+                    setSubmitMessage('');
+                }, 2000);
             }
         } catch (error) {
             console.error('Error creating service:', error);
