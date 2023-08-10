@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from "../components/Header";
+import Footer from "../components/Footer"
 
 function Create() {
     const [serviceName, setServiceName] = useState('');
@@ -123,6 +124,9 @@ function Create() {
                         {submitMessage && <p>{submitMessage}</p>}
                     </div>
                 </div>
+            </div>
+            <div class="footer">
+                <Footer />
             </div>
         </div>
     )
