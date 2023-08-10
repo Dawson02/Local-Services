@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import React, { useState } from "react";
 import "./Account.css"; // Import the CSS file
+import Footer from "../components/Footer";
 
 function Account() {
   const [fullName, setFullName] = useState("");
@@ -83,9 +84,11 @@ function Account() {
           )}
         </div>
       </div>
+      <div class="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
 
 export default Account;
-
