@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import React from "react";
 import useFetchServices from "../components/useFetchServices";
 import "./Service.css";
+import Footer from "../components/Footer";
 
 function Service() {
   const { services, loading, error } = useFetchServices();
@@ -32,6 +33,9 @@ function Service() {
             </li>
           ))}
         </ul>
+      </div>
+      <div class="footer">
+          <Footer />
       </div>
     </div>
   );
