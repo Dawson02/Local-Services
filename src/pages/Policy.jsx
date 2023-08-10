@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import React from "react";
 import "./Policy.css"; // Import the new CSS file
+import Footer from "../components/Footer"
 
 function Policy() {
   return (
@@ -102,6 +103,9 @@ function Policy() {
             .
           </p>
         </div>
+      </div>
+      <div class="footer">
+        <Footer />
       </div>
     </div>
   );
