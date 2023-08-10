@@ -22,7 +22,9 @@ function Account() {
   return (
     <div>
       <Header />
-      <br />
+      <div className="header">
+        <h1 className="header-title">Account</h1>
+      </div>
       <div className="account-container">
         <h1 className="account-title">Edit Profile</h1>
         <div className="account-form">
@@ -86,3 +88,4 @@ function Account() {
 }
 
 export default Account;
+
